@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NhapmonATTTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="firstname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="lastname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="dob" Type="date" Nullable="false" />
+    <Property Name="gentle" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="topic1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="question1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="answer1" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="topic2" Type="nvarchar(max)" />
+    <Property Name="question2" Type="nvarchar(max)" />
+    <Property Name="answer2" Type="nvarchar(max)" />
+    <Property Name="topic3" Type="nvarchar(max)" />
+    <Property Name="question3" Type="nvarchar(max)" />
+    <Property Name="answer3" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="NhapmonATTTModelStoreContainer">
+    <EntitySet Name="users" EntityType="Self.users" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

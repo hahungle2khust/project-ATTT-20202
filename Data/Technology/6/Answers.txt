@@ -1,0 +1,9 @@
+printf("Hello World");
+print("My name is Charley")
+While(true) { //Do something }
+For(int i = 1; i <= 3000; i++) cout << "I love Marry " << i;
+curl -O home/desktop
+defaults write -g ApplePressAndHoldEnabled -bool false
+sudo defaults write /System/Library/Launch Daemons/com.apple.backupd-auto StartInterval -int 1800
+ssh -l root 127.0.0.1
+return IActionResults();
