@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NhapmonATTTModelStoreContainer" CdmEntityContainer="NhapmonATTTEntities">
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="NhapmonATTTModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="dob" ColumnName="dob" />
+          <ScalarProperty Name="gentle" ColumnName="gentle" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="topic1" ColumnName="topic1" />
+          <ScalarProperty Name="question1" ColumnName="question1" />
+          <ScalarProperty Name="answer1" ColumnName="answer1" />
+          <ScalarProperty Name="topic2" ColumnName="topic2" />
+          <ScalarProperty Name="question2" ColumnName="question2" />
+          <ScalarProperty Name="answer2" ColumnName="answer2" />
+          <ScalarProperty Name="topic3" ColumnName="topic3" />
+          <ScalarProperty Name="question3" ColumnName="question3" />
+          <ScalarProperty Name="answer3" ColumnName="answer3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
