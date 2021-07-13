@@ -28,7 +28,7 @@ namespace RegisAndLogin.Controllers
                 dc.users.Add(user);
                 dc.SaveChanges();
             }
-            return View(user);
+           return View(user);
         }
         //Login
 
