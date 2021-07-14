@@ -21,14 +21,24 @@ namespace RegisAndLogin.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Registration([Bind(Exclude = "question1, answer1")] user user)
         {
-            //Save data to database
-            #region Save to Database
-            using (NhapmonATTTEntities dc = new NhapmonATTTEntities())
+            bool Status = false;
+            string Message = "";
+            if (ModelState.IsValid)
             {
-                dc.users.Add(user);
-                dc.SaveChanges();
+                //Save data to database
+                #region Save to Database
+                using (NhapmonATTTEntities dc = new NhapmonATTTEntities())
+                {
+                    dc.users.Add(user);
+                    dc.SaveChanges();
+                }
+                #endregion
             }
-           return View(user);
+            else
+            {
+                Message = "Invalid request";
+            }
+            return View(user);
         }
         //Login
 

@@ -14,12 +14,12 @@ namespace RegisAndLogin.Models
     
     public partial class user
     {
-        public string userId { get; set; }
-        public string username { get; set; }
-        public string firstname { get; set; }
-        public string lastname { get; set; }
-        public System.DateTime dob { get; set; }
-        public string gentle { get; set; }
+        public string UserId { get; set; }
+        public string Username { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public System.DateTime Dob { get; set; }
+        public string Gentle { get; set; }
         public string email { get; set; }
         public string topic1 { get; set; }
         public string question1 { get; set; }
