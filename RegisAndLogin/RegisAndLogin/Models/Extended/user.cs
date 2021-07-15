@@ -9,15 +9,12 @@ namespace RegisAndLogin.Models.Extended
     [MetadataType(typeof(UserMetaData))]
     public partial class User
     {
-    }
-    public class UserMetaData
-    {
         [Display(Name = "Username")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "Username required")]
         public string Username { get; set; }
 
-        [Display(Name ="first name")]
-        [Required(AllowEmptyStrings =false, ErrorMessage ="First name required")]
+        [Display(Name = "first name")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "First name required")]
         public string Firstname { get; set; }
 
         [Display(Name = "last name")]
@@ -26,7 +23,8 @@ namespace RegisAndLogin.Models.Extended
 
         [Display(Name = "Date of birth")]
         [DataType(DataType.Date)]
-        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString ="{0:MM/dd/yyyy}")]
+        [Required(AllowEmptyStrings = false, ErrorMessage = "Birthday required")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Dob { get; set; }
 
         [Display(Name = "last name")]
@@ -76,5 +74,8 @@ namespace RegisAndLogin.Models.Extended
         [Required(AllowEmptyStrings = true, ErrorMessage = "answer the question!")]
         [Display(Name = "Your answer")]
         public string Answer3 { get; set; }
+    }
+    public class UserMetaData
+    {
     }
 }

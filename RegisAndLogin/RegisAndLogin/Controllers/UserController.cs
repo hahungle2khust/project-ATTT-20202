@@ -62,7 +62,7 @@ namespace RegisAndLogin.Controllers
                         && string.Compare(v.answer2, login.Answer2) == 0
                         && string.Compare(v.answer3, login.Answer3) == 0)
                     {
-                       
+                        return View();
                     }
                     else
                     {
